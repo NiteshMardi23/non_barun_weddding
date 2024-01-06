@@ -324,10 +324,10 @@ $border-width: 2px;
     opacity: 1;
 }
 
-// .bg-gallery {
-//     background: linear-gradient(rgba(183, 38, 38, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.jpg), no-repeat center center;
-//     background-size:cover;
-// }
+ .bg-gallery {
+    background: linear-gradient(rgba(183, 38, 38, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.webp), no-repeat center center;
+     background-size:cover;
+     }
 
 .gallery-carousel .owl-nav {
     position: absolute;

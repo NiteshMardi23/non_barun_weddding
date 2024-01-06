@@ -88,7 +88,7 @@
 
 
 var targetDate = new Date();
-targetDate.setDate(targetDate.getDate() + 24);
+targetDate.setDate(targetDate.getDate() + 22);
 
 // Function to update the countdown
 function updateCountdown() {
