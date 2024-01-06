@@ -87,37 +87,7 @@
 })(jQuery);
 
 
-var targetDate = new Date();
-targetDate.setDate(targetDate.getDate() + 22);
 
-// Function to update the countdown
-function updateCountdown() {
-    var currentDate = new Date();
-    var timeDifference = targetDate - currentDate;
-
-    // Calculate days, hours, minutes, and seconds
-    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    // Format the time values with leading zeros
-    var formattedTime = leadingZero(days) + ":" + leadingZero(hours) + ":" + leadingZero(minutes) + ":" + leadingZero(seconds);
-
-    // Update the countdown element
-    $('#countdown').text(formattedTime);
-
-    // Update every second
-    setTimeout(updateCountdown, 1000);
-}
-
-// Function to add leading zero to single-digit numbers
-function leadingZero(number) {
-    return (number < 10) ? "0" + number : number;
-}
-
-// Initial call to start the countdown
-updateCountdown();
 
 
  
